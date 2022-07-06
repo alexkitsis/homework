@@ -5,10 +5,10 @@ from asyncio import run
 class Processor:
     async def process(timeout):
         # simulate some processing, usually I/O
-        await asyncio.sleep(0.5)
+        await asyncio.sleep(timeout)
         print("done")
 
-    async def process_batch(self):
+    async def process_batch_example(self):
         loop = asyncio.get_event_loop()
         loop.run_until_complete(run(loop))
         loop.close()
